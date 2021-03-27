@@ -69,7 +69,9 @@ sudo pacman -S xf86-input-synaptics
 systemctl enable gdm
 
 ```
-## Gnome crashes immediately after login. Also the mouse pointer appearance is corrupted. Maybe I should get some lunch first 
+# Gnome crashes immediately after login. Also the mouse pointer appearance is corrupted. 
+Let's try installing Intel Microcode. Maybe I should get some lunch first ...
+
 
 
 
