@@ -72,6 +72,31 @@ systemctl enable gdm
 # Gnome crashes immediately after login. Also the mouse pointer appearance is corrupted. 
 Let's try installing Intel Microcode. Maybe I should get some lunch first ...
 
+https://wiki.archlinux.org/index.php/Microcode
+
+```
+sudo pacman -S intel-ucode
+
+# then edit /boot/loader/entries/<entry>.conf and add this line above the /initramfs-linux.img 
+initrd     /intel-ucode.img
+
+```
+That didn't fix it, but I now suspect the synaptics driver, or the NVidia driver (I saw some errors scroll by in the console when I tried to read a man page)
+
+```
+sudo pacman -R xf86-input-synaptics
+```
+No such luck. 
+
+Looking at video card issues. 
+https://wiki.archlinux.org/index.php/Hardware_video_acceleration
+https://mpv.io/manual/stable/#options-hwdec
+
+```
+pacman -S mpv
+
+
+
 
 
 
