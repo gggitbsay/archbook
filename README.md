@@ -66,6 +66,8 @@ sudo pacman -S --needed gnome gnome-tweaks
 sudo pacman -S xf86-input-synaptics
 
 
+systemctl enable gdm
+
 ```
 
 
