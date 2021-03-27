@@ -92,6 +92,8 @@ Looking at video card issues.
 https://wiki.archlinux.org/index.php/Hardware_video_acceleration
 https://mpv.io/manual/stable/#options-hwdec
 
+https://wiki.archlinux.org/index.php/GNOME/Troubleshooting#Shell_freezes
+
 ```
 pacman -S mpv
 
