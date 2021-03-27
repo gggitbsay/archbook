@@ -97,10 +97,13 @@ https://wiki.archlinux.org/index.php/GNOME/Troubleshooting#Shell_freezes
 ```
 pacman -S mpv
 
+pacman -S mesa
 
+```
 
+Somewhere above this went away. I also unplugged the secondary monitor, suspecting the Intel card is having trouble driving it since Debian also had an issue (unable to display at all) on this Macbook.
 
+Rolling up some packages I've been adding as I tweak things my way now. 
 
-
-
+sudo pacman -Sy keepassxc firefox rsync signal-desktop
 
